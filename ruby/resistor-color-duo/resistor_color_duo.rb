@@ -16,32 +16,25 @@ To get started with TDD, see the `README.md` file in your
 - White: 9
 =end
 class ResistorColorDuo
+  @resitor_map = {
+    'black' => '0',
+    'brown' => '1',
+    'red' => '2',
+    'orange' => '3',
+    'yellow' => '4',
+    'green' => '5',
+    'blue' => '6',
+    'violet' => '7',
+    'grey' => '8',
+    'white' => '9'
+  }
   def self.value(*colors)
-    (color_value(colors[0][0]) + color_value(colors[0][1])).to_i
+    # print "#{colors[0][0]} #{colors[0][1]}"
+    "#{color_value(colors[0][0])}#{color_value(colors[0][1])}".to_i
   end
 
   def self.color_value(color)
-    case color.downcase
-    when 'black'
-      '0'
-    when 'brown'
-      '1'
-    when 'red'
-     '2'
-    when 'orange'
-      '3'
-    when 'yellow'
-      '4'
-    when 'green'
-      '5'
-    when 'blue'
-      '6'
-    when 'violet'
-      '7'
-    when 'grey'
-      '8'
-    when 'white'
-      '9'
-    end
+    # print @resitor_map[color.downcase]
+    @resitor_map[color]
   end
 end
