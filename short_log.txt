@@ -1,0 +1,81 @@
+{
+  "_index": "mdx_upstream-2023.08.16",
+  "_id": "2VkjAIoB-6YduZWowGgY",
+  "_version": 1,
+  "_score": null,
+  "_source": {
+    "controller": "sessions",
+    "request_time": 2843.6839999999997,
+    "client_guid": "CLT-a16155e9-9cad-4a9f-a40b-077c1638a39b",
+    "request_duration": "2843.6839999999997",
+    "client_name": "First Hawaiian Bank (FHB) - Q2",
+    "user_guid": null,
+    "sampled": false,
+    "span_id": "4b8b682eaa606ce",
+    "type": "mdx_upstream",
+    "node_site": "sd",
+    "api_call_payload": "= Request\n\n! CONNECT TO web.quark.svc.cluster.local:80\n! CONNECTION ESTABLISHED\nPOST /fhb-q2/authentications HTTP/1.1\r\nAccept: application/vnd.mx.mdx.v6+json\r\nmx-trace-id: TRC-8cc290ca-2c84-4f23-a0a7-f082f0c33221\r\nmx-client-guid: CLT-a16155e9-9cad-4a9f-a40b-077c1638a39b\r\nmx-device-ip-address: 136.36.72.64\r\nmx-device-trace-id: 3c7773d7-d757-42e6-a078-abf7d1b71e97\r\nmx-session-trace-id: 3b160213-ab15-4de2-b80c-b14f720d7036\r\nmx-feature: identity\r\nContent-Type: application/vnd.mx.mdx.v6+json\r\nAuthorization: MDX sha1 f9c41d042fa94ee446a8c4de8b49c4f61e08f6d3\r\nDate: Wed, 16 Aug 2023 20:57:32 GMT\r\nX-B3-ParentSpanId: 5aa252dfac1bbb21\r\nX-B3-Sampled: 0\r\nX-B3-SpanId: 4b8b682eaa606ce\r\nX-B3-TraceId: 5aa252dfac1bbb21\r\nUser-Agent: HTTPClient/1.0 (2.8.3, ruby 2.6.8 (2023-02-01))\r\nContent-Length: 2847\r\nHost: web.quark.svc.cluster.local\r\n\r\n{\"authentication\":{\"login\":\"-q2usermx_disclaimer2\",\"password\":\"**MASKED**\",\"app_version\":\"6.2.5\",\"client_device_token\":\"TUv6i3b47Mk%3d=DYW0tTCcft8YxyVbeH7irgKsQ8sc3H2%2fx6yg6E81rdulZO3OnNfnyA%3d%3d; ufHJO9vXLiw=1oX64cCa9h9DUEu5xsRcsg==\",\"device_os_id\":null,\"device_altitude\":null,\"device_altitude_accuracy\":null,\"device_cell_tower_id\":null,\"device_geolocation_at\":null,\"device_geolocation_heading\":null,\"device_geolocation_horizontal_accuracy\":null,\"device_geolocation_speed\":null,\"device_hardware_id\":null,\"device_id\":\"**MASKED**\",\"device_ip_address\":\"136.36.72.64\",\"device_is_jailbroken\":false,\"device_is_multitasking_supported\":null,\"device_iovation_token\":\"**MASKED**\",\"device_languages\":null,\"device_latitude\":0.0,\"device_location_area_code\":null,\"device_longitude\":0.0,\"device_make\":\"samsung\",\"device_mobile_carrier_code\":null,\"device_mobile_country_code\":null,\"device_model\":\"SM-G991U1\",\"device_name\":\"SM-G991U1\",\"device_operating_system\":\"android\",\"device_operating_system_version\":\"11\",\"device_phone_area_code\":null,\"device_phone_country_code\":null,\"device_phone_extension\":null,\"device_phone_number\":null,\"device_rsa_token\":\"\",\"device_screen_height\":2256,\"device_screen_width\":1080,\"device_sim_id\":null,\"device_vendor_client_id\":null,\"device_wifi_bbsid\":null,\"device_wifi_channel\":null,\"device_wifi_mac_address\":null,\"device_wifi_signal_strength\":null,\"device_wifi_station_name\":null}}\n\n= Response\n\nHTTP/1.1 202 Accepted\r\nmx-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOm51bGwsInNlc3Npb25JZCI6IjZiMTBiNTQyLWI2OTItNDY0MS1hZjBiLTE5MjdiODUzYmM0NCIsImlzcyI6ImZoYi1xMiIsImV4cCI6MTY5MjIyMTI1NSwiaWF0IjoxNjkyMjE5NDU1fQ.GFSvR3KibTGisUOTGeaYNwpAfWbNu4VncNM6ZZeBPnw\r\nmx-session-key: ****b853bc44\r\ncontent-type: application/vnd.mx.mdx.v6+json;charset=UTF-8\r\ndate: Wed, 16 Aug 2023 20:57:35 GMT\r\nx-envoy-upstream-service-time: 2798\r\nserver: envoy\r\ntransfer-encoding: chunked\r\n\r\n7e26\r\n{\n  \"authentication\": {\n    \"challenges\": [\n      {\n        \"id\": \"DISCLAIMERS\",\n        \"questions\": [\n          {\n            \"id\": \"2\",\n            \"prompt\": \"\\u003cstyle\\u003e\\r\\n    .grey-text {\\r\\n        color: #808080;\\r\\n    }\\r\\n\\r\\n    .blue-text {\\r\\n        color: #4F81BD;\\r\\n    }\\r\\n\\r\\n    .toc {\\r\\n        padding-left: 0px;\\r\\n        margin-left: 0px;\\r\\n        list-style: none;\\r\\n    }\\r\\n\\r\\n    .toc h4,\\r\\n    .toc li .item {\\r\\n        color: #808080;\\r\\n        font-weight: bold;\\r\\n        text-transform: uppercase;\\r\\n    }\\r\\n\\r\\n    .toc li .item {\\r\\n        display: flex;\\r\\n        justify-content: space-between;\\r\\n    }\\r\\n\\r\\n    .toc li .item p {\\r\\n        margin: 0px\\r\\n    }\\r\\n\\r\\n    .sub-list li div {\\r\\n        color: #000000;\\r\\n        font-weight: 400;\\r\\n        display: flex;\\r\\n        justify-content: space-between;\\r\\n    }\\r\\n\\r\\n    .sub-list p {\\r\\n        margin: 5px 0px;\\r\\n    }\\r\\n\\r\\n    .page-number {\\r\\n        display: flex;\\r\\n        justify-content: space-between;\\r\\n    }\\r\\n\\u003c/style\\u003e\\r\\n\\r\\n\\u003cdiv class\\u003d\\\"ws_html_conversion\\\" style\\u003d\\\"font-family: Open Sans, Arial, sans-serif;\\\"\\u003e\\r\\n    ",\n            \"title\": \"FHB Online \\u0026 Mobile Terms \\u0026 Conditions\"\n          }\n        ],\n        \"type\": \"TERMS\"\n      }\n    ],\n    \"id\": \"6b10b542-b692-4641-af0b-1927b853bc44\"\n  }\n}\r\n0\r\n\r\n",
+    "node_app": "synchronicity",
+    "node": "web-6674c8948c-8ggbm",
+    "encoding": "UTF-8",
+    "app_guid": "APP-1a673ed8-303a-4795-ac74-e127e37bfb04",
+    "node_number": "999",
+    "headers": {
+      "mx-session-key": "****b853bc44",
+      "date": "Wed, 16 Aug 2023 20:57:35 GMT",
+      "mx-auth-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOm51bGwsInNlc3Npb25JZCI6IjZiMTBiNTQyLWI2OTItNDY0MS1hZjBiLTE5MjdiODUzYmM0NCIsImlzcyI6ImZoYi1xMiIsImV4cCI6MTY5MjIyMTI1NSwiaWF0IjoxNjkyMjE5NDU1fQ.GFSvR3KibTGisUOTGeaYNwpAfWbNu4VncNM6ZZeBPnw",
+      "content-type": "application/vnd.mx.mdx.v6+json;charset=UTF-8",
+      "x-envoy-upstream-service-time": "2798",
+      "server": "envoy",
+      "transfer-encoding": "chunked"
+    },
+    "request_method": "post",
+    "device_guid": null,
+    "@version": "1",
+    "status": 202,
+    "event": {
+      "created": "2023-08-16T20:57:35.506Z"
+    },
+    "host": "web-6674c8948c-8ggbm",
+    "device_trace_id": "3c7773d7-d757-42e6-a078-abf7d1b71e97",
+    "node_env": "int",
+    "parent_id": "5aa252dfac1bbb21",
+    "content": "{\n  \"authentication\": {\n    \"challenges\": [\n      {\n        \"id\": \"DISCLAIMERS\",\n        \"questions\": [\n          {\n            \"id\": \"2\",\n            \"prompt\": \"\\u003cstyle\\u003e\\r\\n    .grey-text {\\r\\n        color: #808080;\\r\\n    }\\r\\n\\r\\n    .blue-text {\\r\\n        color: #4F81BD;\\r\\n    }\\r\\n\\r\\n    .toc {\\r\\n        padding-left: 0px;\\r\\n        margin-left: 0px;\\r\\n        list-style: none;\\r\\n    }\\r\\n\\r\\n    .toc h4,\\r\\n    .toc li .item {\\r\\n        color: #808080;\\r\\n        font-weight: bold;\\r\\n        text-transform: uppercase;\\r\\n    }\\r\\n\\r\\n    .toc li .item {\\r\\n        display: flex;\\r\\n        justify-content: space-between;\\r\\n    }\\r\\n\\r\\n    .toc li .item p {\\r\\n        margin: 0px\\r\\n    }\\r\\n\\r\\n    .sub-list li div {\\r\\n        color: #000000;\\r\\n     ",\n            \"title\": \"FHB Online \\u0026 Mobile Terms \\u0026 Conditions\"\n          }\n        ],\n        \"type\": \"TERMS\"\n      }\n    ],\n    \"id\": \"6b10b542-b692-4641-af0b-1927b853bc44\"\n  }\n}",
+    "trace_id": "5aa252dfac1bbb21",
+    "session_trace_id": "3b160213-ab15-4de2-b80c-b14f720d7036",
+    "device_id": "3606b91e450cef0f136cbeb1f119e9425b79212f027d90973cb3b0aa76a53fc0c98c7b2f70d6311b716f225f723bc26a206bc1b18a4526d11513738a9b9479ed",
+    "app_build": "20230816083033",
+    "feature": "identity",
+    "request_uri": "http://web.quark.svc.cluster.local/fhb-q2/authentications",
+    "@timestamp": "2023-08-16T20:57:35.501Z",
+    "action": "create",
+    "k8s": {
+      "container": "synchronicity",
+      "pod": {
+        "uid": "20b0f027-c444-493b-8160-08f40c560447",
+        "ip": "10.65.95.34",
+        "name": "web-6674c8948c-8ggbm"
+      },
+      "namespace": "synchronicity",
+      "backend": "sd-int-kubebackend1303",
+      "deployment": "web",
+      "replicaset": "web-6674c8948c"
+    }
+  },
+  "fields": {
+    "@timestamp": [
+      "2023-08-16T20:57:35.501Z"
+    ],
+    "event.created": [
+      "2023-08-16T20:57:35.506Z"
+    ]
+  },
+  "highlight": {
+    "client_name": [
+      "@opensearch-dashboards-highlighted-field@First@/opensearch-dashboards-highlighted-field@ @opensearch-dashboards-highlighted-field@Hawaiian@/opensearch-dashboards-highlighted-field@ @opensearch-dashboards-highlighted-field@Bank@/opensearch-dashboards-highlighted-field@ (@opensearch-dashboards-highlighted-field@FHB@/opensearch-dashboards-highlighted-field@) - @opensearch-dashboards-highlighted-field@Q2@/opensearch-dashboards-highlighted-field@"
+    ]
+  },
+  "sort": [
+    1692219455501
+  ]
+}
